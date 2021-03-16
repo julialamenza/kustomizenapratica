@@ -1,0 +1,12 @@
+# kustomization.yaml dev
+---
+resources:
+- ../base
+
+namespace: demo-dev
+nameSuffix: -dev
+
+# Overrise base common labels
+commonLabels:
+  environment: dev
+

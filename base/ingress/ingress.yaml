@@ -1,0 +1,17 @@
+# ---
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: demo-app-ingress
+#   annotations:
+#     kubernetes.io/ingress.class: "nginx-ords-subscription"
+# spec:
+#   tls:
+#   - secretName: 
+#   rules:
+#   - http:
+#       paths:
+#         - path: /
+#           backend:
+#             serviceName: demo-app-svc
+#             servicePort: 8075
