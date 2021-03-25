@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: # metadados sobre o pod, informações internas do cluster
-  name: demo-app # nome interno do pod
+metadata: 
+  name: demo-app 
 spec:
   selector: 
     matchLabels:

@@ -7,7 +7,7 @@ commonLabels:
   environment: base 
 
 images: 
-- name: app
+- name: julialamenza/api
   newTag: '0.1.0'
 
 replicas:
