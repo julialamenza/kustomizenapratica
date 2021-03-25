@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:
-  name: demo-app-deployment
+metadata: # metadados sobre o pod, informações internas do cluster
+  name: demo-app # nome interno do pod
 spec:
-  selector:
+  selector: 
     matchLabels:
       app: demo-app
   template:
     metadata:
       labels:
         app: demo-app
-    spec:
+    spec: 
       containers:
-      - name: app
-        image: julialamenza/api:0.1.0
+      - name: demo-app
+        image: julialamenza/api
         ports:
         - name: http
           containerPort: 8075

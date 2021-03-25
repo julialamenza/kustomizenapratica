@@ -2,11 +2,20 @@
 ---
 resources:
 - ../base
+# Overrise base common labels
+commonLabels:
+  environment: dev
 
 namespace: demo-dev
 nameSuffix: -dev
 
-# Overrise base common labels
-commonLabels:
-  environment: dev
+images: 
+- name: julialamenza/api
+  newTag: '0.1.1'
+
+replicas:
+- name: demo-app
+  count: 2
+
+
 
